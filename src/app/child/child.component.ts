@@ -14,8 +14,8 @@ export class ChildComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  increment() {
-    this.counterChange.emit(++this.counter);
+  decrement() {
+    this.counterChange.emit(--this.counter);
   }
 
 }
