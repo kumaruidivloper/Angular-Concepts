@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular-Concepts';
+
+  counter = 0;
+
+  increment() {
+    this.counter++;
+  }
+
+  onCounterChange(counter: number) {
+    this.counter = counter;
+  }
 }
